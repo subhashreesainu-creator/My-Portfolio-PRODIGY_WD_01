@@ -1,0 +1,173 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+/* Navbar */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* ✅ ensures responsiveness */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* ✅ cleaner spacing */
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease; /* ✅ smooth hover */
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* Home */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(to right, #00bcd4, #3f51b5);
+    color: white;
+    min-height: 90vh;
+    flex-wrap: wrap; /* ✅ avoids overflow on small screens */
+}
+
+.home-content {
+    max-width: 50%;
+    min-width: 300px; /* ✅ ensures readability */
+}
+
+.home-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.home-content span {
+    color: #ffeb3b;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffeb3b;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s ease; /* ✅ smooth hover */
+}
+
+.btn:hover {
+    background: #ffc107;
+}
+
+.home-img img {
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid white;
+    max-width: 100%; /* ✅ responsive */
+}
+
+/* About */
+.about {
+    padding: 50px;
+    text-align: center;
+    background: white;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #3f51b5;
+}
+
+/* Projects */
+.projects {
+    padding: 50px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.projects h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #3f51b5;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* ✅ better spacing */
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ✅ smoother hover */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Contact */
+.contact {
+    padding: 50px;
+    background: #3f51b5;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
